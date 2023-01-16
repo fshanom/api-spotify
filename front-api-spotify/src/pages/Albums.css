@@ -1,0 +1,16 @@
+.grid-container {
+  display: inline-grid;
+  column-gap: 50px;
+  padding: 40px;
+}
+
+.album-cover {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.album-info {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding-top: 50px;
+}

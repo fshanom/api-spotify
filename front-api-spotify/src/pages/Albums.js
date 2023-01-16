@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Albums.css';
 
 const url = 'http://localhost:3000/albums/'
 const albumsInit = {items:[], error: {}};
@@ -37,9 +38,17 @@ function Albums() {
             </form>
             <div>
                 {albums.items.map((album) => (
-                    <div>
-                        <img src={album.images[1].url} alt={album.name}></img>
-                        <p>{album.name}</p>
+                    <div className='grid-container'>
+                        <div className='album-cover'>
+                            <img src={album.images[1].url} alt={album.name}></img>                   
+                        </div>
+                        <div className='album-info'>
+                            <p>Nome: {album.name}</p>
+                            <p>Data de Lançamento: {album.release_date}</p>
+                            <p>Total de faixas: {album.total_tracks}</p>
+                            <p>Tipo: {album.album_type}</p>
+                            <p>URL: <a href={album.external_urls.spotify} className='App-link'>Link</a></p>
+                        </div>
                     </div>
                 ))}
             </div>
