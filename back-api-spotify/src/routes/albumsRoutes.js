@@ -5,6 +5,6 @@ import AlbumController from "../controllers/albumsController.js";
 const router = express.Router();
 
 router
-    .get("/albums/:idArtista&:spotifyToken", cors(), AlbumController.listarAlbums)
+    .get("/albums", cors(), AlbumController.listarAlbums)
 
 export default router;
