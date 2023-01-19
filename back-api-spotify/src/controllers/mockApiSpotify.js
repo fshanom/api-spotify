@@ -1616,6 +1616,6 @@ export const responseMock = {
     }
   },
 
-  spotifyToken: "BQAxoJkbRezB6xe4cR-8GJK-_BXZYm3Tw2eCsLbmHeTY_CxsgoWTGVvIHVN2EHgqo1BFpEvDwl5YdGNxujapuea6QuGNMDGXK8A8hQOMPff5FwDo1iZCuQ6Yx1VZM0Ud-G4jdi6RV_8XzgOWZ3K7hcUQtpHlMcSg2iwqvDN6LS1TTwCFPW0mJeAS3WkBKezagig",
+  spotifyToken: "BQCV7eNC37gbZwBBnKte1WHOXerZbw4w40PinjX6ei8lfCLK-XKHBxsxs9nJppafe-CZFpzj8enSD7RX2Q2TBTvnRIs13GQDBcEevPTcMSmfARoKDG-WxQeYkbMXwWJEwkUVzSvl5RqGBTFZmRKA15M-NkZPHan401IrsPAY0i4o89KS5eyYPm3majnry7BtYFQ",
   idArtista: "74XFHRwlV6OrjEM0A2NCMF"
 }
