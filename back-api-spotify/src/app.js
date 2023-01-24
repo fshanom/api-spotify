@@ -1,12 +1,14 @@
 import express from "express";
 import routes from "./routes/index.js";
-// import db from "./config/dbConnect.js";
-
-// db.on("error", console.log.bind(console, 'Erro de conexão'));
-// db.once("open", () => console.log('Conexão com o banco feita com sucesso'))
+import cors from 'cors';
+import authMiddleware from './middlewares/auth.js';
+import dotenv from "dotenv-safe"
+dotenv.config()
 
 const app = express();
 app.use(express.json());
+app.use(cors())
+//app.use(authMiddleware)
 routes(app);
 
 export default app;
